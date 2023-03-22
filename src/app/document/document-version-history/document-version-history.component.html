@@ -1,0 +1,49 @@
+<div class="dialog-header">
+    <div class="folder-dialog-info">
+        <div class="section-title">
+            <h2>
+                {{data.name}}... {{'VERSION_HISOTRY' | translate}}
+            </h2>
+        </div>
+    </div>
+    <div class="close-icon m-2 text-danger" (click)="closeDialog()">
+        <span class="material-icons cursor-pointer">
+            close
+        </span>
+    </div>
+</div><br>
+<div class="d-content">
+    <div class="box box-primary">
+        <div class="box-body">
+            <table class="table">
+                <tbody>
+                    <tr *ngFor="let version of data.documentVersions">
+                        <td>{{version.modifiedDate | date:"dd/MM/yyyy hh:mm a"}}</td>
+                        <td>
+                            {{'ADDED_BY ' | translate}}{{version.createdByUser}}
+                        </td>
+                        <td>
+                            <span *ngIf="version.isCurrentVersion" class="badge badge-success"
+                                style="margin-bottom: 10px">{{'CURRENT_VERSION' | translate}}</span>
+                            <div *ngIf="!version.isCurrentVersion">
+                                <span (click)="onDocumentView(version)"
+                                    class="material-icons-outlined mr-2 text-primary" matTooltip="view" role="button">
+                                    <mat-icon> visibility</mat-icon>
+                                </span>
+                                <span (click)="downloadDocument(version)" *ngIf="!data.isAssignUser" role="button"
+                                    class="mr-2 text-primary" matTooltip="Download">
+                                    <mat-icon> download</mat-icon>
+                                </span>
+                                <span (click)="restoreDocumentVersion(version)" role="button" *ngIf="!data.isAssignUser"
+                                    matTooltip="Restore to Current Version"
+                                    class="material-icons-outlined text-primary">
+                                    <mat-icon> restore</mat-icon>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

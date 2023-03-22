@@ -1,0 +1,17 @@
+<div mat-dialog-content>
+  <div class="form-group">
+    <label for="screeName">Page Name:</label>
+    <input [(ngModel)]="data.name" type="text" class="form-control" id="screeName">
+  </div>
+</div>
+<div mat-dialog-actions>
+  <ng-container *ngIf="!isEdit">
+    <button  class="btn btn-success btn-sm m-right-10" (click)="saveScreen()" cdkFocusInitial>
+      <i class="las la-save"></i> Save</button>
+  </ng-container>
+  <ng-container *ngIf="isEdit">
+    <button  class="btn btn-success btn-sm m-right-10" (click)="saveScreen()"
+      cdkFocusInitial><i class="las la-save"></i> Save</button>
+  </ng-container>
+  <button class="btn btn-danger btn-sm" (click)="onNoClick()"><i class="las la-times-circle"></i> Cancel</button>
+</div>

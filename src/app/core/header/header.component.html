@@ -1,0 +1,109 @@
+<div class="topbar">
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <a routerLink="./" class="logo">
+      <span><img src="assets/images/logo.png" alt="logo-large" class="logo-lg"></span>
+    </a>
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="las la-ellipsis-v"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="list-unstyled topbar-nav ml-auto topbar-nav-right mb-0 float-right hide-when-toogle">
+        <li class="nav-item dropdown">
+          <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+            <img class="contry-flag rounded" src="{{ language.flag }}" alt="language" /> {{ language.name }}
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <ng-container *ngFor="let language of languages">
+              <li role="button" class="dropdown-item" (click)="setNewLanguageRefresh(language.lang)">
+                <img class="contry-flag mr-1 mb-2 rounded" src="{{ language.flag }}"> {{ language.name }}
+              </li>
+            </ng-container>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link dropdown">
+            <span class="left-fa-icon">
+              <i class="la la-user fs-19"></i>
+            </span>
+            {{appUserAuth.firstName}} {{appUserAuth.lastName}}
+          </a>
+        </li>
+        <li class="nav-item notification">
+          <a class="nav-link cursor-pointer">
+            <span class="mb-0 dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <span class="notification-area" *ngIf="notifications">
+                <i class="la la-bell"></i>
+                <div class="count">
+                  <div class="number">{{newNotificationCount}}</div>
+                </div>
+              </span>
+            </span>
+            <ul *ngIf="notifications" class="dropdown-menu">
+              <li class="head text-light bg-dark">
+                <div class="row">
+                  <div class="col-lg-12 col-sm-12 col-12">
+                    <span>{{'NOTIFICATIONS' | translate}} ({{notifications.length}})</span>
+                    <a (click)="markAllAsReadNotification()" class="float-right text-light">{{'MARK_ALL_AS_READ' |
+                      translate}}</a>
+                  </div>
+                </div>
+              </li>
+              <li class="sub-level-menu">
+                <ul>
+                  <li class="notification-box" [class.bg-gray]="isOdd"
+                    *ngFor="let notification of notifications; let isOdd=odd;">
+                    <div class="col-md-12 row">
+                      <div class="col-md-2">
+                        <i (click)="viewNotification(notification)"
+                          class="las  text-primary la-eye m-right-10 fs-27 d-block" title="view"></i>
+                        <i (click)="markAsReadNotification(notification.id)"
+                          class="las text-success la-check-square fs-27" data-toggle="tooltip" data-placement="bottom"
+                          title="Mark as Read"></i>
+                      </div>
+                      <div class="col-md-10">
+                        <ng-container *ngIf="!notification.message">
+                          <p class="mb-0">
+                            <span *ngIf="!notification.isRead" class="badge badge-success">new</span>
+                            <b> {{notification.document.name}} </b> {{'DOCUMENT_PERMISSION_GRANTED_TO_YOU' | translate}}
+                          </p>
+                        </ng-container>
+                        <ng-container *ngIf="notification.message">
+                          <p class="mb-0">
+                            <span *ngIf="!notification.isRead" class="badge badge-success">new</span>
+                            <b> {{notification.message}} </b>
+                            {{'REMINDER' | translate}}
+                            <ng-container * ngIf="notification.document">
+                              ::{{notification.document?.name}}
+                            </ng-container>
+                          </p>
+                        </ng-container>
+                        <small class="text-info">{{notification.createdDate | date: 'dd/MM/yyyy' }}</small>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer bg-dark text-center text-center d-flex justify-content-center">
+                <a [routerLink]="['/notifications']" class="text-light p-0 width-auto">{{'VIEW_ALL' | translate}}</a>
+              </li>
+            </ul>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cursor-pointer" (click)="onMyProfile()">
+            <span class="left-fa-icon"><i class="la la-id-card fs-19"></i></span>
+            <span class="mb-0 ">{{'MY_PROFILE' | translate}}</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="onLogout()">
+            <span class="left-fa-icon"><i class="la la-sign-out-alt fs-19"></i></span><span class="mb-0 ">{{'LOGOUT' |
+              translate}}</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>

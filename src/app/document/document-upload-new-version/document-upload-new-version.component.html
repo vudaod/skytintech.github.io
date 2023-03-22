@@ -1,0 +1,44 @@
+<div class="row mb-3 align-items-center justify-content-between">
+    <div class="col-md-auto col-sm-auto">
+      <div class="section-title">
+        <h2>{{'ADD_DOCUMENT' | translate}}</h2>
+      </div>
+    </div>
+  </div>
+  
+  <form [formGroup]="documentForm">
+      <div class="col-md-12">
+        <div class="form-group">
+          <label>{{'DOCUMENT_UPLOAD' | translate}}</label>
+          <input class="form-control" #file (change)="upload(file.files)" type="file">
+          <div
+            *ngIf="(documentForm.get('url').touched || documentForm.get('url').dirty) && documentForm.get('url').errors">
+            <div class="text-danger" *ngIf="documentForm.get('url').errors?.required">
+              {{'DOCUMENT_IS_REQUIRED' | translate}}
+            </div>
+          </div>
+          <div
+            *ngIf="(documentForm.get('extension').touched || documentForm.get('extension').dirty) && documentForm.get('url').errors">
+            <div class="text-danger" *ngIf="documentForm.get('extension').errors?.required">
+              {{'DOCUMENT_TYPE_IS_NOT_ALLOW' | translate}}
+            </div>
+          </div>
+          <!-- <div *ngIf="documentForm.get('fileSize').touched && documentForm.get('fileSize').errors">
+            <div class="text-danger" *ngIf="documentForm.get('fileSize').errors?.required">
+              Document size is maximum 10MB.
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div class="col-md-12">
+        <mat-progress-bar *ngIf="showProgress" mode="determinate" [value]="progress"></mat-progress-bar>
+      </div>
+      <div class="m-top-10 col-md-12">
+        <button *hasClaim="'all_documents_create_document'" [disabled]="!isFileUpload"
+          class="btn btn-success btn-sm m-right-10" (click)="SaveDocument()" cdkFocusInitial><i class="las la-save"></i>
+          {{'SAVE' | translate}}</button>
+        <button type="button" class="btn btn-danger btn-sm" (click)="closeDialog()"><i
+            class="las la-times-circle"></i> {{'CANCEL' | translate}}</button>
+      </div>
+    
+  </form>

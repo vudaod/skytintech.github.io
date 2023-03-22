@@ -1,0 +1,42 @@
+<div class="row mb-3 align-items-center justify-content-between">
+  <div class="col-md-auto col-sm-auto">
+    <div class="section-title">
+      <h2>{{'USER_PAGE_PERMISSION_TO' | translate}} : <span class="text-info">{{user?.firstName}}
+          {{user?.lastName}}</span></h2>
+    </div>
+  </div>
+</div>
+<div>
+  <div class="row align-items-center">
+    <div class="col-md-4 col-sm-12">
+      <h1 class="widget-title">{{'PERMISSION' | translate}}</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div fxLayout="row wrap" *ngFor='let screen of screens; let i=index'>
+        <div fxFlex="100" fxFlex.sm="100">
+          <mat-checkbox color="primary" (change)="onPageSelect($event,screen.name)">
+            <b> {{screen.name}}</b>
+          </mat-checkbox>
+        </div>
+        <div class="row ml-2">
+          <ng-container *ngFor='let operation of operations'>
+            <div *ngIf="checkPageAction(screen.id,operation.id)" class="col-sm-3">
+              <mat-checkbox color="primary" [checked]="checkPermission(screen.id,operation.id)"
+                (change)="onPermissionChange($event,screen,operation)">
+                {{operation.name}}
+              </mat-checkbox>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="m-top-10">
+  <button *hasClaim="'user_assign_permission'" class="btn btn-success btn-sm m-right-10" (click)="saveUserClaim()"
+    cdkFocusInitial><i class="las la-save"></i> {{'SAVE' | translate}}</button>
+  <a class="btn btn-danger btn-sm" [routerLink]="['/users']"><i class="las la-times-circle"></i> {{'CANCEL' |
+    translate}}</a>
+</div>

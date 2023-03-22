@@ -1,0 +1,6 @@
+<app-manage-screen-operation-presentation [screens]="screens$ | async" [operations]="operations$ | async"
+  [screenOperations]="screenOperations$ | async" [loading]="loading$ | async"
+  (addScreenOperation)="onAddScreenOperation($event)"
+  [loadingScreen]="loadingScreen$ | async" [loadingOperation]="loadingOperation$ | async"
+   (deleteScreenOperation)="onDeleteScreenOperation($event)">
+</app-manage-screen-operation-presentation>

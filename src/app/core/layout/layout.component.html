@@ -1,0 +1,11 @@
+<div class="content-main smooth-animation" #lead>
+  <app-loading-indicator></app-loading-indicator>
+  <app-header class="" [lead]="lead"></app-header>
+  <div class="sidebar">
+    <app-sidebar></app-sidebar>
+  </div>
+  <div class="content-area">
+    <router-outlet></router-outlet>
+  </div>
+  <app-footer></app-footer>
+</div>
