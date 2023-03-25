@@ -1,6 +1,6 @@
 export const environment = {
   production: false,
-  apiUrl: 'http://vudaod192561-001-site1.atempurl.com/',
+  apiUrl: 'https://vudaod192561-001-site1.atempurl.com/',
   allowExtesions: [
     {
       type: 'office',
