@@ -23,7 +23,7 @@
 .dropleft .dropdown-menu .dropdown-item:focus,
 .dropleft .dropdown-menu .dropdown-item.active,
 .link-post-content i {
-    color: #e08a21 !important;
+    color: #dac153 !important;
 }
 
 /* BACKGROUND */
@@ -51,7 +51,7 @@
 .pagination>.active>span:focus,
 .pagination>.active>span:hover,
 .footer-social li a:hover i {
-    background-color: #e08a21 !important;
+    background-color: #dac153 !important;
 }
 
 /* BORDER-COLOR */
@@ -74,7 +74,7 @@
 .blockquote,
 .link-post-content,
 .border-primary {
-    border-color: #e08a21 !important;
+    border-color: #dac153 !important;
 }
 
 
@@ -91,7 +91,7 @@
     .navbar-custom .navbar-nav li.active a,
     .navbar-custom .navbar-nav li a:hover,
     .navbar-custom .navbar-nav li a:active {
-        color: #e08a21 !important;
+        color: #dac153 !important;
     }
 }
 
@@ -122,7 +122,7 @@
 .nav-sticky.navbar-custom .navbar-nav li a:hover,
 .nav-sticky.navbar-custom .navbar-nav li a:focus,
 .nav-sticky.navbar-custom .navbar-nav li a:active {
-    color: #e08a21 !important;
+    color: #dac153 !important;
 }
 
 
@@ -130,13 +130,13 @@
 
 
 .nav-sticky .menu-offcanvas>.btn i {
-    color: #e08a21;
+    color: #dac153;
 }
 
 .section-title-badge {
     background-color: rgba(224 138 33 / 29%);
     padding: 10px 20px;
-    color: #e08a21;
+    color: #dac153;
     border-radius: 4px;
 }
 
@@ -144,7 +144,7 @@
     font-size: 10px;
     font-weight: 600;
     transition: all 0.5s;
-    border: 1px solid #e08a21;
+    border: 1px solid #dac153;
     background-color: #ffffff;
     overflow: hidden;
     position: relative;
@@ -154,25 +154,25 @@
 .offcanvas-body .menu-item:hover i,
 .offcanvas-body .menu-item:focus i,
 .offcanvas-body .menu-item:active i {
-    color: #e08a21;
+    color: #dac153;
 }
 
 .offcanvas-body .menu-item:hover a,
 .offcanvas-body .menu-item:focus a,
 .offcanvas-body .menu-item:active a {
-    color: #e08a21;
+    color: #dac153;
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
-    color: #e08a21;
+    color: #dac153;
     background-color: transparent !important;
 }
 
 .nav-link.active,
 .nav-link:focus,
 .nav-link:hover {
-    color: #e08a21;
+    color: #dac153;
 }
 
 
@@ -227,7 +227,7 @@
 }
 
 .pricing-box .price-check {
-    color: #e08a21;
+    color: #dac153;
 }
 
 .pricing-box .price-check.active {
@@ -251,7 +251,7 @@
 
 
 .team-concept .team-image .team-overlay .social-icon .avatar-sm:hover {
-    background-color: #e08a21;
+    background-color: #dac153;
     transition: all 0.5s;
     border-radius: 4px;
 }
@@ -269,7 +269,7 @@
 }
 
 .home-21 .hero-img .title-heading .roket {
-    color: #e08a21;
+    color: #dac153;
     font-size: 45px;
     transition: all 0.9s;
     animation: translateandrotate 1.2s infinite;
@@ -277,7 +277,7 @@
 
 
 #style-switcher .settings {
-    background: #e08a21;
+    background: #dac153;
     color: #ffffff;
     font-size: 24px;
     position: absolute;
@@ -302,7 +302,7 @@
     transition: all 0.5s;
   }
   .menu-user-icon .avatar-sm:hover {
-    background-color: #e08a21;
+    background-color: #dac153;
   }
   
 
@@ -311,7 +311,7 @@
     height: 40px;
     margin-top: -22px;
     line-height: 40px;
-    background-color: #e08a21;
+    background-color: #dac153;
     text-align: center;
     font-size: 30px;
     color: #fff;
@@ -324,7 +324,7 @@
     height: 40px;
     margin-top: -22px;
     line-height: 40px;
-    background-color: #e08a21;
+    background-color: #dac153;
     text-align: center;
     font-size: 30px;
     color: #fff;
@@ -341,7 +341,7 @@
     text-align: center;
     z-index: 10000;
     border-radius: 3px;
-    background-color: #e08a21;
+    background-color: #dac153;
     transition: all 0.5s;
   }
 

@@ -39,11 +39,11 @@ html {
 
 /*******color Loop*******/
 .text-primary {
-  color: #e08a21 !important;
+  color: #dac153 !important;
 }
 
 .bg-primary {
-  background-color: #e08a21 !important;
+  background-color: #dac153 !important;
 }
 
 .text-secondary {
@@ -312,8 +312,8 @@ html {
 }
 
 .btn-primary {
-  background: #e08a21;
-  border-color: #e08a21 !important;
+  background: #dac153;
+  border-color: #dac153 !important;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn-primary .open > .dropdown-toggle.btn-primary {
@@ -323,13 +323,13 @@ html {
 }
 
 .btn-outline-primary {
-  color: #e08a21;
-  border-color: #e08a21;
+  color: #dac153;
+  border-color: #dac153;
 }
 .btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary.focus, .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled):active:focus,
 .btn-outline-primary .open > .dropdown-toggle.btn-primary {
-  background: #e08a21;
-  border-color: #e08a21;
+  background: #dac153;
+  border-color: #dac153;
   box-shadow: 0px 8px 20px -6px rgba(224, 138, 33, 0.6);
 }
 
@@ -607,7 +607,7 @@ html {
 .navbar-custom.navbar-white .navbar-nav li a:hover,
 .navbar-custom.navbar-white .navbar-nav li a:focus,
 .navbar-custom.navbar-white .navbar-nav li a:active {
-  color: #e08a21 !important;
+  color: #dac153 !important;
 }
 
 /*---NAVBAR STICKY--*/
@@ -636,14 +636,14 @@ html {
   position: relative;
 }
 .nav-sticky .menu-offcanvas > .btn i {
-  color: #e08a21;
+  color: #dac153;
 }
 
 .nav-sticky.navbar-custom .navbar-nav li.active a,
 .nav-sticky.navbar-custom .navbar-nav li a:hover,
 .nav-sticky.navbar-custom .navbar-nav li a:focus,
 .nav-sticky.navbar-custom .navbar-nav li a:active {
-  color: #e08a21 !important;
+  color: #dac153 !important;
 }
 
 .nav-sticky.navbar-custom .navbar-toggles {
@@ -662,7 +662,7 @@ html {
   background-color: #ffffff;
   display: inline-block;
   line-height: 80px;
-  color: #e08a21;
+  color: #dac153;
   font-size: 34px;
   border: 2px dashed #eee;
   position: relative;
@@ -671,7 +671,7 @@ html {
   transition: all 0.3s ease-in-out;
 }
 .nav-pills .nav-item .nav-link.active i, .nav-pills .nav-item .nav-link:focus i, .nav-pills .nav-item .nav-link:hover i {
-  background-color: #e08a21;
+  background-color: #dac153;
   color: #ffffff;
 }
 
@@ -679,7 +679,7 @@ html {
   color: #9da9bb;
 }
 .nav-link.active, .nav-link:focus, .nav-link:hover {
-  color: #e08a21;
+  color: #dac153;
 }
 
 @media (max-width: 476px) {
@@ -748,10 +748,10 @@ html {
   transition: all 0.5s ease-in-out;
 }
 .offcanvas-body .menu-item:hover a, .offcanvas-body .menu-item:focus a, .offcanvas-body .menu-item:active a {
-  color: #e08a21;
+  color: #dac153;
 }
 .offcanvas-body .menu-item:hover i, .offcanvas-body .menu-item:focus i, .offcanvas-body .menu-item:active i {
-  color: #e08a21;
+  color: #dac153;
 }
 
 @media (max-width: 1024px) {
@@ -765,7 +765,7 @@ html {
     position: relative;
   }
   .menu-offcanvas > .btn i {
-    color: #e08a21;
+    color: #dac153;
   }
 }
 @media (min-width: 992px) {
@@ -862,7 +862,7 @@ html {
 .section-title-badge {
   background-color: rgba(224, 138, 33, 0.2);
   padding: 10px 20px;
-  color: #e08a21;
+  color: #dac153;
   border-radius: 4px;
 }
 
@@ -870,7 +870,7 @@ html {
   font-size: 10px;
   font-weight: 600;
   transition: all 0.5s;
-  border: 1px solid #e08a21;
+  border: 1px solid #dac153;
   background-color: #ffffff;
   overflow: hidden;
   position: relative;
@@ -901,7 +901,7 @@ html {
   transition: all 0.5s;
 }
 .menu-user-icon .avatar-sm:hover {
-  background-color: #e08a21;
+  background-color: #dac153;
 }
 
 .hero-3 {
@@ -949,7 +949,7 @@ html {
   left: -5%;
 }
 .control-prev .control-prev-icon {
-  background-color: #e08a21;
+  background-color: #dac153;
   font-size: 40px;
   padding: 0 10px;
   border-radius: 20px;
@@ -962,7 +962,7 @@ html {
   z-index: 11;
 }
 .control-next .control-next-icon {
-  background-color: #e08a21;
+  background-color: #dac153;
   font-size: 40px;
   padding: 0 10px;
   border-radius: 20px;
@@ -1124,7 +1124,7 @@ html {
   padding-top: 140px;
 }
 .bg-full .form-border {
-  border-top: 4px solid #e08a21;
+  border-top: 4px solid #dac153;
 }
 
 .business-home-shape img {
@@ -1174,7 +1174,7 @@ html {
   height: 40px;
   margin-top: -22px;
   line-height: 40px;
-  background-color: #e08a21;
+  background-color: #dac153;
   text-align: center;
   font-size: 30px;
   color: #fff;
@@ -1190,7 +1190,7 @@ html {
   height: 40px;
   margin-top: -22px;
   line-height: 40px;
-  background-color: #e08a21;
+  background-color: #dac153;
   text-align: center;
   font-size: 30px;
   color: #fff;
@@ -1294,7 +1294,7 @@ html {
   transition: all 0.5s;
 }
 .social-media ul li:hover a {
-  color: #e08a21;
+  color: #dac153;
 }
 
 .home-form .card {
@@ -1461,7 +1461,7 @@ html {
   padding: 140px 0;
 }
 .home-21 .hero-img .title-heading .roket {
-  color: #e08a21;
+  color: #dac153;
   font-size: 45px;
   transition: all 0.9s;
   animation: translateandrotate 1.2s infinite;
@@ -1519,7 +1519,7 @@ html {
   .navbar-custom .navbar-nav li.active a,
   .navbar-custom .navbar-nav li a:hover,
   .navbar-custom .navbar-nav li a:active {
-    color: #e08a21 !important;
+    color: #dac153 !important;
   }
   .navbar-toggler {
     font-size: 24px;
@@ -1563,7 +1563,7 @@ html {
   margin: 8px 8px 12px;
 }
 #style-switcher .settings {
-  background: #e08a21;
+  background: #dac153;
   color: #ffffff;
   font-size: 24px;
   position: absolute;
@@ -1591,7 +1591,7 @@ ul.pattern li a {
   margin: 5px;
 }
 ul.pattern .color1 {
-  background-color: #e08a21;
+  background-color: #dac153;
 }
 ul.pattern .color2 {
   background-color: #2558ab;
@@ -1620,7 +1620,7 @@ ul.pattern .color6 {
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #e08a21;
+  color: #dac153;
   background-color: transparent !important;
 }
 
@@ -1803,7 +1803,7 @@ ul.pattern .color6 {
   border-radius: 20px;
 }
 .pricing-box .price-check {
-  color: #e08a21;
+  color: #dac153;
 }
 .pricing-box .price-check.active {
   color: #3e72d2;
@@ -1857,7 +1857,7 @@ ul.pattern .color6 {
   color: #ffffff;
 }
 .team-social .list-inline .list-inline-item:hover {
-  background-color: #e08a21;
+  background-color: #dac153;
   transition: all 0.5s;
 }
 
@@ -1877,7 +1877,7 @@ ul.pattern .color6 {
   color: #9da9bb;
 }
 .team-concept .team-image .team-overlay .social-icon .avatar-sm:hover {
-  background-color: #e08a21;
+  background-color: #dac153;
   transition: all 0.5s;
   border-radius: 4px;
 }
